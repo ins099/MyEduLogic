@@ -1,0 +1,8 @@
+export const ROOT_NAVIGATION = 'ROOT_NAVIGATION';
+export const AUTH_NAVIGATION = 'AUTH_NAVIGATION';
+export const APP_NAVIGATION = 'APP_NAVIGATION';
+export const RETRIEVE_DATA = 'RETRIEVE_DATA';
+
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
+export const SIGN_IN_FAILURE = 'SIGN_IN_FAILURE';

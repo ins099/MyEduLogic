@@ -1,0 +1,14 @@
+com/firmsols/myedulogic/MainActivity.java
+ com.firmsols.myedulogic.MainActivity
+com/firmsols/myedulogic/BuildConfig.java
+ com.firmsols.myedulogic.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/firmsols/myedulogic/ReactNativeFlipper.java
+ com.firmsols.myedulogic.ReactNativeFlipper
+ com.firmsols.myedulogic.ReactNativeFlipper$1
+ com.firmsols.myedulogic.ReactNativeFlipper$2
+ com.firmsols.myedulogic.ReactNativeFlipper$2$1
+com/firmsols/myedulogic/MainApplication.java
+ com.firmsols.myedulogic.MainApplication
+ com.firmsols.myedulogic.MainApplication$1

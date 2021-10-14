@@ -3,7 +3,10 @@ import { Text, View, Image, Dimensions } from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { NavigationContainer } from '@react-navigation/native';
 import MyStack from './src/navigators/MyStack'
+import {Provider} from 'react-redux';
 import { scale, verticalScale, ScaledSheet } from 'react-native-size-matters'
+import { store } from './src/store/store';
+import { navigationRef } from './NavigationService';
 
 export default function App() {
 
@@ -70,11 +73,11 @@ export default function App() {
   }
 
   return(
-
-    <NavigationContainer>
-      <MyStack />
-    </NavigationContainer>
-
+    <Provider store = {store}>
+      <NavigationContainer ref={navigationRef}>
+        <MyStack />
+      </NavigationContainer>
+    </Provider>
   )
 }
 

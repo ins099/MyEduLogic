@@ -1,0 +1,268 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.firmsols.myedulogic"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="27" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\debug\AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:5:5-64
+13-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:5:22-62
+14
+15    <uses-feature
+15-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:6:5-85
+16        android:name="android.hardware.camera"
+16-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:6:19-57
+17        android:required="false" />
+17-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:6:58-82
+18    <uses-feature
+18-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:7:5-91
+19        android:name="android.hardware.camera.front"
+19-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:7:19-63
+20        android:required="false" />
+20-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:7:64-88
+21
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->[com.facebook.flipper:flipper:0.75.1] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\59dce57610242757fe534989f062f16e\jetified-flipper-0.75.1\AndroidManifest.xml:16:5-76
+22-->[com.facebook.flipper:flipper:0.75.1] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\59dce57610242757fe534989f062f16e\jetified-flipper-0.75.1\AndroidManifest.xml:16:22-73
+23
+24    <queries>
+24-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-14:15
+25        <intent>
+25-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-13:18
+26            <action android:name="android.media.action.IMAGE_CAPTURE" />
+26-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-73
+26-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:21-70
+27        </intent>
+28    </queries>
+29
+30    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+30-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-81
+30-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-78
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:23:5-79
+31-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:23:22-76
+32    <uses-permission android:name="android.permission.WAKE_LOCK" />
+32-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:5-68
+32-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:22-65
+33    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+33-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:5-110
+33-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:22-107
+34
+35    <application
+35-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:9:5-27:19
+36        android:name="com.firmsols.myedulogic.MainApplication"
+36-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:10:7-38
+37        android:allowBackup="false"
+37-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:14:7-34
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\06e73e72619c49c09138b5533b18afeb\core-1.2.0\AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:12:7-41
+41        android:label="@string/app_name"
+41-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:11:7-39
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:13:7-52
+43        android:theme="@style/AppTheme"
+43-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:15:7-38
+44        android:usesCleartextTraffic="true" >
+44-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\debug\AndroidManifest.xml:8:9-44
+45        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+45-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\debug\AndroidManifest.xml:11:9-86
+45-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\debug\AndroidManifest.xml:11:19-83
+46        <activity
+46-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:16:7-26:18
+47            android:name="com.firmsols.myedulogic.MainActivity"
+47-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:17:9-37
+48            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+48-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:19:9-86
+49            android:label="@string/app_name"
+49-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:18:9-41
+50            android:launchMode="singleTask"
+50-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:20:9-40
+51            android:windowSoftInputMode="adjustResize" >
+51-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:21:9-51
+52            <intent-filter>
+52-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:22:9-25:25
+53                <action android:name="android.intent.action.MAIN" />
+53-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:23:13-65
+53-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:23:21-62
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:24:13-73
+55-->F:\Work\Novearts\TeachersApp\MyEduLogic\android\app\src\main\AndroidManifest.xml:24:23-70
+56            </intent-filter>
+57        </activity>
+58
+59        <meta-data
+59-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:36
+60            android:name="app_data_collection_default_enabled"
+60-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
+61            android:value="true" />
+61-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-33
+62
+63        <service
+63-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:19
+64            android:name="com.google.firebase.components.ComponentDiscoveryService"
+64-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:18-89
+65            android:directBootAware="true"
+65-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5ff5deb695f9ab89da8c931a06ea61ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+66            android:exported="false" >
+66-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:29:13-37
+67            <meta-data
+67-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:85
+68                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+68-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-120
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-82
+70            <meta-data
+70-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:30:13-32:85
+71                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+71-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:31:17-139
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\17ee5750e02037d8abd48aba53e25dd8\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:32:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5a71d09b1295a7c54788b14ca181d13f\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+74                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+74-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5a71d09b1295a7c54788b14ca181d13f\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5a71d09b1295a7c54788b14ca181d13f\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+76        </service>
+77
+78        <provider
+78-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-26:38
+79            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+79-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-88
+80            android:authorities="com.firmsols.myedulogic.reactnativefirebaseappinitprovider"
+80-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-86
+81            android:exported="false"
+81-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-37
+82            android:initOrder="99" />
+82-->[:react-native-firebase_app] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-35
+83        <provider
+83-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-27:20
+84            android:name="androidx.core.content.FileProvider"
+84-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-62
+85            android:authorities="com.firmsols.myedulogic.provider"
+85-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-60
+86            android:exported="false"
+86-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-37
+87            android:grantUriPermissions="true" >
+87-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-47
+88            <meta-data
+88-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-26:58
+89                android:name="android.support.FILE_PROVIDER_PATHS"
+89-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:17-67
+90                android:resource="@xml/provider_paths" />
+90-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:17-55
+91        </provider>
+92
+93        <activity
+93-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-31:72
+94            android:name="com.yalantis.ucrop.UCropActivity"
+94-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-60
+95            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+95-->[:react-native-image-crop-picker] F:\Work\Novearts\TeachersApp\MyEduLogic\node_modules\react-native-image-crop-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-69
+96
+97        <provider
+97-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5ff5deb695f9ab89da8c931a06ea61ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+98            android:name="com.google.firebase.provider.FirebaseInitProvider"
+98-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5ff5deb695f9ab89da8c931a06ea61ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+99            android:authorities="com.firmsols.myedulogic.firebaseinitprovider"
+99-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5ff5deb695f9ab89da8c931a06ea61ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+100            android:directBootAware="true"
+100-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5ff5deb695f9ab89da8c931a06ea61ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+101            android:exported="false"
+101-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5ff5deb695f9ab89da8c931a06ea61ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+102            android:initOrder="100" />
+102-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\5ff5deb695f9ab89da8c931a06ea61ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+103
+104        <meta-data
+104-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\7b0e3a34c45e6d385b09adfea23d4aa4\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:11:9-13:43
+105            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+105-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\7b0e3a34c45e6d385b09adfea23d4aa4\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:12:13-84
+106            android:value="GlideModule" />
+106-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\7b0e3a34c45e6d385b09adfea23d4aa4\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:13:13-40
+107
+108        <activity
+108-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
+109            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+109-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
+110            android:excludeFromRecents="true"
+110-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
+113        <!--
+114            Service handling Google Sign-In user revocation. For apps that do not integrate with
+115            Google Sign-In, this service will never be started.
+116        -->
+117        <service
+117-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
+118            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+118-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
+119            android:exported="true"
+119-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
+120            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+120-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
+121            android:visibleToInstantApps="true" />
+121-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\23ab2149983465a1e4c4b8f6a6810750\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
+122
+123        <activity
+123-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\2979d7221ef6ebe60e1c1d67b268c8e9\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+124            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+124-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\2979d7221ef6ebe60e1c1d67b268c8e9\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+125            android:exported="false"
+125-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\2979d7221ef6ebe60e1c1d67b268c8e9\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+126            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+126-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\2979d7221ef6ebe60e1c1d67b268c8e9\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+127
+128        <receiver
+128-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:29:9-33:20
+129            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+129-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:30:13-85
+130            android:enabled="true"
+130-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:31:13-35
+131            android:exported="false" >
+131-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:32:13-37
+132        </receiver>
+133
+134        <service
+134-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:35:9-38:40
+135            android:name="com.google.android.gms.measurement.AppMeasurementService"
+135-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:36:13-84
+136            android:enabled="true"
+136-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:37:13-35
+137            android:exported="false" />
+137-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:38:13-37
+138        <service
+138-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:39:9-43:72
+139            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+139-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:40:13-87
+140            android:enabled="true"
+140-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:41:13-35
+141            android:exported="false"
+141-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:42:13-37
+142            android:permission="android.permission.BIND_JOB_SERVICE" />
+142-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\55a8e7cacf13f5c888cc54da32ededac\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:43:13-69
+143
+144        <meta-data
+144-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\77150d6433101009dadfebdd97cdbedf\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
+145            android:name="com.google.android.gms.version"
+145-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\77150d6433101009dadfebdd97cdbedf\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
+146            android:value="@integer/google_play_services_version" />
+146-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Insaram Alam\.gradle\caches\transforms-2\files-2.1\77150d6433101009dadfebdd97cdbedf\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
+147    </application>
+148
+149</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">750097824537-ge8fmeld48e5vssgi5clrc316jnjkgeo.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">750097824537</string>
+    <string name="google_api_key" translatable="false">AIzaSyBLkdLRxWKCl4Nl0VCWUB_fzmYsFwOO7p4</string>
+    <string name="google_app_id" translatable="false">1:750097824537:android:c50494091ab20ed369a388</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBLkdLRxWKCl4Nl0VCWUB_fzmYsFwOO7p4</string>
+    <string name="google_storage_bucket" translatable="false">phoneauth-f9f40.appspot.com</string>
+    <string name="project_id" translatable="false">phoneauth-f9f40</string>
+</resources>
