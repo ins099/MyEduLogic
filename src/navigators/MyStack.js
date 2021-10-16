@@ -50,31 +50,24 @@ import ChatScreen from '../screens/ChatScreen'
 
 const Stack = createNativeStackNavigator()
 
+
 export default function MyStack () {
 
     return(
-        <Stack.Navigator initialRouteName='CreateAccount'>
+        <Stack.Navigator initialRouteName='Menu'>
+            <Stack.Screen name='Menu' component={Menu} options={{headerShown:false}} />
             <Stack.Screen name='Homepage' component={Homepage} options={{headerShown:false}} />
             <Stack.Screen name='Inbox' component={Inbox} options={{headerShown:false}} />
             <Stack.Screen name='Activities' component={Activities} options={{headerShown:false}} />
-            <Stack.Screen name='AlmostDone' component={AlmostDone} options={{headerShown:false}} />
-            <Stack.Screen name='CreateSchool' component={CreateSchool} options={{headerShown:false}} />
             <Stack.Screen name='Diary' component={Diary} options={{headerShown:false}} />
             <Stack.Screen name='Events' component={Events} options={{headerShown:false}} />
             <Stack.Screen name='Lessons' component={Lessons} options={{headerShown:false}} />
             <Stack.Screen name='Library' component={Library} options={{headerShown:false}} />
-            <Stack.Screen name='SignUp' component={SignUp} options={{headerShown:false}} />
-            <Stack.Screen name='Menu' component={Menu} options={{headerShown:false}} />
             <Stack.Screen name='Recommendations' component={Recommendations} options={{headerShown:false}} />
             <Stack.Screen name='Schedule' component={Schedule} options={{headerShown:false}} />
-            <Stack.Screen name='StaffParents' component={StaffParents} options={{headerShown:false}} />
-            <Stack.Screen name='VerifyEmail' component={VerifyEmail} options={{headerShown:false}} />
-            <Stack.Screen name='CreateAccount' component={CreateAccount} options={{headerShown:false}} />
-            <Stack.Screen name='Login' component={Login} options={{headerShown:false}} />
             <Stack.Screen name='ParentDashboard' component={ParentDashboard} options={{headerShown:false}} />
             <Stack.Screen name='ChatScreenBlue' component={ChatScreenBlue} options={{headerShown:false}} />
             <Stack.Screen name='Notifications' component={Notifications} options={{headerShown:false}} />
-            <Stack.Screen name='VerifySms' component={VerifySms} options={{headerShown:false}} />
             <Stack.Screen name='Calendar' component={Calendars} options={{headerShown:false}} />
             <Stack.Screen name='Childrenlist' component={Childrenlist} options={{headerShown:false}} />
             <Stack.Screen name='Roomlist' component={Roomlist} options={{headerShown:false}} />
@@ -82,8 +75,6 @@ export default function MyStack () {
             <Stack.Screen name='Addvideo' component={Addvideo} options={{headerShown:false}} />
             <Stack.Screen name='EditProfile' component={EditProfile} options={{headerShown:false}} />
             <Stack.Screen name='Kudos' component={Kudos} options={{headerShown:false}} />
-            <Stack.Screen name='Code' component={Code} options={{headerShown:false}} />
-            <Stack.Screen name='FinalStep' component={FinalStep} options={{headerShown:false}} />
             <Stack.Screen name='Settings' component={Settings} options={{headerShown:false}} />
             <Stack.Screen name='NewMessage' component={NewMessage} options={{headerShown:false}} />
             <Stack.Screen name='AccountSettings' component={AccountSettings} options={{headerShown:false}} />

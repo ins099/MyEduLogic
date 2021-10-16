@@ -46,7 +46,7 @@ export function* SignInSaga({ type, payload }) {
         "Success",
         "Logged In Successfully",
         "Continue",
-        ()=>NavigationService.navigate("Menu"),
+        ()=>NavigationService.navigate("MyStack",{Screen:'Menu'}),
         "Cancel",
         ()=>console.log("PRESS CANCEL")
         )
