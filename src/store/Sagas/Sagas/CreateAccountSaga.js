@@ -7,17 +7,29 @@ import {
 import * as NavigationService from "../../../../NavigationService"
 import { API_ENDPOINTS } from '../../../Constants/Network';
 import { RestClient } from './../../../Constants/Network/RestClient';
+import { createCustomAlert } from './../../../helpers/index';
 
 
 export function* CreateAccountSaga({ type, payload }) {
   try {
-    console.log("UPDATE PASS",payload)
 
     if(payload.type == "teacher"){
         const teacherResponse = yield call(() =>
         RestClient.post(API_ENDPOINTS.teacher_update, { ...payload }))
 
-        console.log("TEACJER RESPONSE",teacherResponse)
+        const {data} = teacherResponse
+        console.log("TEACJER RESPONSE",data)
+  
+        if(teacherResponse.problem || data.error){
+          const {password} = data.errors
+          createCustomAlert(
+            "Error",
+            password[0],
+            "Cancel",
+            ()=>console.log("PRESS CANCEL")
+  
+          )
+        }
 
     }
 
@@ -25,7 +37,31 @@ export function* CreateAccountSaga({ type, payload }) {
       const parentResponse = yield call(() =>
       RestClient.post(API_ENDPOINTS.student_update, { ...payload }))
 
-      console.log("TEACJER RESPONSE",parentResponse)
+      const {data} = parentResponse
+      console.log("parent RESPONSE",data)
+
+      if(parentResponse.problem || data.error){
+        const {password} = data.errors
+        createCustomAlert(
+          "Error",
+          password[0],
+          "Cancel",
+          ()=>console.log("PRESS CANCEL")
+
+        )
+      }else{
+        
+        createCustomAlert(
+          "Success",
+          "Password Updated",
+          "Continue",
+          ()=>NavigationService.navigate("AuthNav",{screen:'AlmostDone'}),
+          "Cancel",
+          ()=>console.log("PRESS CANCEL")
+          )
+      }
+
+
 
   }
     // const response = yield call(() =>
