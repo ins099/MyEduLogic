@@ -54,7 +54,7 @@ const Stack = createNativeStackNavigator()
 export default function MyStack () {
 
     return(
-        <Stack.Navigator initialRouteName='Menu'>
+        <Stack.Navigator >
             <Stack.Screen name='Menu' component={Menu} options={{headerShown:false}} />
             <Stack.Screen name='Homepage' component={Homepage} options={{headerShown:false}} />
             <Stack.Screen name='Inbox' component={Inbox} options={{headerShown:false}} />

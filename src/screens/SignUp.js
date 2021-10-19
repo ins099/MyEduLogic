@@ -1,70 +1,40 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { StyleSheet, Text, View, Image,Dimensions, Alert, ActivityIndicator, TouchableOpacity, TextInput} from 'react-native'
 import { scale, verticalScale, moderateScale, ScaledSheet } from 'react-native-size-matters';
 import LinearGradient from 'react-native-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import { useDispatch, useSelector } from 'react-redux';
+import { CREATE_ACCOUNT } from '../store/actionstype';
 
-export default function SignUp() {
+export default function SignUp(props) {
+    const {navigation} = props
+    const dispatch = useDispatch()
 
-    const [name, setName] = React.useState('');
-    const [email, setEmail] = React.useState('');
-    const [password, setPassword] = React.useState('');
-    const [rePassword, setrePassword] = React.useState('');
-    const [loading, setLoading] = React.useState(false)
-    const navigation = useNavigation()
+    const onPressNext = () => {
+        dispatch({type:CREATE_ACCOUNT,payload:state})
+    }
 
-    // async function signup () {
-    //     if(email === '' || password === '' || name === ''){
-    //         if(email === '' && password !== '' && name !== ''){
-    //             Alert.alert('Alert', 'Please enter your email', [{text:'OK'}])
-    //             return
-    //         }
-    //         else if(password === '' && email !== '' && name !== ''){
-    //             Alert.alert('Alert', 'Please fill in password', [{text:'OK'}])
-    //             return
-    //         }
-    //         else if(name === '' && email !== '' && password !== ''){
-    //             Alert.alert('Alert', 'Please enter your name', [{text:'OK'}])
-    //             return
-    //         }
-    //         else if(name === '' && email === '' && password === ''){
-    //             Alert.alert('Alert', 'All fields are empty', [{text:'OK'}])
-    //             return
-    //         }
-    //     }
-    //     else if(password === rePassword){
-    //         Alert.alert('Alert', 'Passwords are not matching', [{text:'OK'}])
-    //         return
-    //     }
-    //     else {
-    //         try{
-    //             setLoading(true)
-    //             const res = await fetch('',{
-    //                 method:'POST',
-    //                 headers:{
-    //                     'Content-Type':'application/json'
-    //                 },
-    //                 body:JSON.stringify({
-    //                     password:password
-    //                 })
-    //             })
-    //             const response = await res.json();
-    //             console.log(response)
-    //             if(){
-    //                 navigation.navigate('Menu')
-    //             }
-    //         } catch(err) {
-    //             console.log(err)
-    //         }
-    //         setLoading(false)
-    //     }
-    //     if(loading === true){
-    //         <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-    //             <ActivityIndicator size='large' color='blue' />
-    //         </View>
-    //     }
-    // }
+
+    const {UserProfileReducer} = useSelector(state => ({
+        UserProfileReducer:state.UserProfileReducer
+    }))
+
+    const {
+        email,
+        name,
+        type,
+        id,
+    } = UserProfileReducer
+
+    const [state,setState] = useState({
+        name:name,
+        email:email,
+        id:id,
+        type:type,
+        password:"",
+        password_confirmation:''
+    })
 
     return (
         <View style={{
@@ -89,7 +59,8 @@ export default function SignUp() {
             }}>
                 <LinearGradient colors={['#E3FBFF', '#F2F2F2']} style={styles.linearGradientText}>
                     <TextInput  style={styles.input}
-                                onChangeText={setName}
+                                // onChangeText={(text)=>setState({...state,name:text})}
+                                value = {state.name}
                                 placeholder="Name"
                                 placeholderTextColor="grey" 
                                 allowFontScaling={false}
@@ -97,7 +68,8 @@ export default function SignUp() {
                 </LinearGradient>
                 <LinearGradient colors={['#E3FBFF', '#F2F2F2']} style={styles.linearGradientText}>
                     <TextInput  style={styles.input}
-                                onChangeText={setEmail}
+                                // onChangeText={setEmail}
+                                value = {state.email}
                                 placeholder="Email"
                                 placeholderTextColor="grey" 
                                 allowFontScaling={false}
@@ -105,7 +77,7 @@ export default function SignUp() {
                 </LinearGradient>
                 <LinearGradient colors={['#E3FBFF', '#F2F2F2']} style={styles.linearGradientText}>
                     <TextInput  style={styles.input}
-                                onChangeText={setPassword}
+                                onChangeText={(text)=>setState({...state,password:text})}
                                 placeholder="Password"
                                 placeholderTextColor="grey"
                                 allowFontScaling={false}
@@ -113,7 +85,7 @@ export default function SignUp() {
                 </LinearGradient>
                 <LinearGradient colors={['#E3FBFF', '#F2F2F2']} style={styles.linearGradientText}>
                     <TextInput  style={styles.input}
-                                onChangeText={setrePassword}
+                                onChangeText={(text)=>setState({...state,password_confirmation:text})}
                                 placeholder="Re-enter password"
                                 placeholderTextColor="grey" 
                                 allowFontScaling={false}
@@ -121,7 +93,7 @@ export default function SignUp() {
                 </LinearGradient>
             </View>
 
-            <TouchableOpacity onPress={() => navigation.navigate('AlmostDone')}>
+            <TouchableOpacity onPress={onPressNext}>
                 <LinearGradient colors={['#2F90D8', '#041D6E']} style={styles.linearGradient}>
                     <AntDesign name='arrowright' size={scale(25)} color='white' />
                 </LinearGradient>

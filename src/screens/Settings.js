@@ -7,13 +7,19 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import { useNavigation } from '@react-navigation/native'
 import MyTabBar from '../navigators/MyTabBar';
+import { useDispatch } from 'react-redux'
+import { LOGOUT } from '../store/actionstype'
 
 export default function Settings() {
 
     const navigation = useNavigation()
-
+    const dispatch = useDispatch()
     const [isEnabled, setIsEnabled] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+
+    const onPressLogout = () => {
+        dispatch({type:LOGOUT,payload:null})
+    }
 
     return (
         <ScrollView>
@@ -217,7 +223,7 @@ export default function Settings() {
                             />
                     </View>
                 <View style={{flexDirection: 'row', justifyContent: 'center', marginTop:scale(20)}}>
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
+                    <TouchableOpacity style={styles.button} onPress={onPressLogout}>
                         <Text style={styles.buttonText}>LOG OUT</Text>
                     </TouchableOpacity>
                 </View>

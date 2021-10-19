@@ -1,63 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { StyleSheet, Text, View, Image, Dimensions, Alert, TouchableOpacity, ActivityIndicator, TextInput} from 'react-native'
 import { scale, verticalScale, moderateScale, ScaledSheet } from 'react-native-size-matters';
 import LinearGradient from 'react-native-linear-gradient';
-import OTPInputView from '@twotalltotems/react-native-otp-input'
-import { useNavigation } from '@react-navigation/native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import {CodeField,useBlurOnFulfill,useClearByFocusCell} from 'react-native-confirmation-code-field';
+import { VERIFY_USER } from './../store/actionstype';
+import { useDispatch } from 'react-redux';
 
-export default function Code ({route}) {
 
-    // const {role} = route.params
+export default function Code (props) {
+    const {navigation} = props
+    const {role} = props.route.params
+    const dispatch = useDispatch()
+    const CELL_COUNT = 4;
+    const [value, setValue] = useState('');
+    const ref = useBlurOnFulfill({value, cellCount: CELL_COUNT});
+    const [prop, getCellOnLayoutHandler] = useClearByFocusCell({
+      value,
+      setValue,
+    });
 
-    const [code, setCode] = React.useState('')
-    const [loading, setLoading] = React.useState(false)
+    const [state,setState] = useState({
+        type:role,
+        code:''
+    })
 
-    const navigation = useNavigation()
-
-    // async function Verify () {
-    //     if(code.length < 4 || code === ''){
-    //         if(code === ''){
-    //             Alert.alert('Sorry', 'Please enter a code', [{text:'OK'}])
-    //         }
-    //         else if(code.length < 4){
-    //             Alert.alert('Sorry', 'Please enter 4 digits', [{text:'OK'}])
-    //         }
-    //         else if(code.length < 4 && code === ''){
-    //             Alert.alert('Sorry', 'Please enter a code', [{text:'OK'}])
-    //         }
-    //     }
-    //     else{
-    //         try{
-    //             setLoading(true)
-    //             const res = await fetch('',{
-    //                 method:'POST',
-    //                 headers:{
-    //                     'Content-Type':'application/json'
-    //                 },
-    //                 body:JSON.stringify({
-    //                     code:code,
-    //                     role:role
-    //                 })
-    //             })
-    //             const response = await res.json();
-    //             console.log(response)
-    //             if(){
-    //                 navigation.navigate('AlmostDone')
-    //             }
-    //         } catch(err) {
-    //             console.log(err)
-    //         }
-    //         setLoading(false)
-    //     }
-    //     if(loading === true){
-    //         <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-    //             <ActivityIndicator size='large' color='blue' />
-    //         </View>
-    //     }
-    // }
-    //     }
-    // }
+    onPressVerify = () => {
+        dispatch({type:VERIFY_USER,payload:state})
+    }
 
     return (
         <View style={{
@@ -75,37 +45,51 @@ export default function Code ({route}) {
             </TouchableOpacity>
 
             <View>
-                <Text style={styles.container}>Verify Email</Text>
+                <Text style={styles.container}>Verify Code</Text>
             </View>
             
             <View style={{
                 alignItems: 'center',
                 marginTop: verticalScale(100),
                 width: scale(300),
+                flexDirection:'row'
             }}>
                <Text style={{
                     color: '#87A0A8',
                     fontSize: scale(15),
                     fontFamily:'Montserrat-Regular'
-               }}>The verification code has been sent</Text>
+               }}>Your school has sent verification code
+               to your given email.</Text>
                <Text style={{
                    alignSelf:'flex-start',
                    marginLeft:scale(32),
                    color:'#228588',
                    textDecorationLine:'underline',
                    fontFamily:'Montserrat-Regular'
-               }}>Check Inbox</Text>
+               }}>Kindly Check Inbox</Text>
             </View>
-            <OTPInputView
-                    style={{width:scale(250), height:verticalScale(100)}}
-                    pinCount={4}
-                    autoFocusOnLoad
-                    codeInputFieldStyle={styles.underlineStyleBase}
-                    codeInputHighlightStyle={styles.underlineStyleHighLighted}
-                    onCodeFilled = {(code) => setCode(code)}
-                />
 
-            <TouchableOpacity onPress={() => navigation.navigate('AlmostDone')}>
+                <CodeField
+                        ref={ref}
+                        {...prop}
+                        caretHidden={false} 
+                        value={state.code}
+                        onChangeText={(code) => setState({...state,code:code})}
+                        cellCount={CELL_COUNT}
+                        rootStyle={styles.codeFieldRoot}
+                        keyboardType="number-pad"
+                        textContentType="oneTimeCode"
+                        renderCell={({index, symbol, isFocused}) => (
+                        <Text
+                            key={index}
+                            style={[styles.cell, {marginHorizontal:10},isFocused && styles.focusCell]}
+                            onLayout={getCellOnLayoutHandler(index)}>
+                            {symbol }
+                        </Text>
+                        )}
+                    />
+
+            <TouchableOpacity onPress={onPressVerify}>
                 <LinearGradient colors={['#2F90D8',  '#041D6E']} style={styles.linearGradient}>
                     <Text style={styles.buttonText}>Verify</Text>
                 </LinearGradient>
@@ -205,6 +189,21 @@ const styles = ScaledSheet.create({
     },
     underlineStyleHighLighted: {
         borderColor: "#03DAC6",
+    },
+    root: {flex: 1, padding: 20},
+    title: {textAlign: 'center', fontSize: 30},
+    codeFieldRoot: {marginTop: 20,},
+    cell: {
+      width: 40,
+      height: 40,
+      lineHeight: 38,
+      fontSize: 24,
+      borderBottomWidth: 2,
+      borderBottomColor: '#00000030',
+      textAlign: 'center',
+    },
+    focusCell: {
+      borderColor: '#000',
     },
 })
  

@@ -48,9 +48,7 @@ export default function StaffParents() {
                 </LinearGradient>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => navigation.navigate('Code', {
-                role:'parent'
-            })} style={styles.buttonBorder}>
+            <TouchableOpacity onPress={() => navigation.navigate('Code', {role:'parent'})} style={styles.buttonBorder}>
                 <Text style={styles.buttonIn}>Parents or family</Text>
             </TouchableOpacity>
 
